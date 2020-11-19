@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0BA8B2E-4B95-AEA5-879E-6935AB3727D0" name="Customer_Booking">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:40:34 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cust_number" id="6DDBD3F4-3923-20A2-DAFF-5D6F1449C4EF">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:41:19 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>71C68905-8D43-835B-B531-212A8FC82FC4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_name" id="D20B7609-95AA-6462-6792-40F483F096DA">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:41:41 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5926418-8B93-3B2B-96FA-2F418B14B2D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_address" id="FD1EDCFE-BE03-7AF3-75A6-A38DA40E6324">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:42:11 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5926418-8B93-3B2B-96FA-2F418B14B2D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_email" id="F0E8F37C-9A42-97AB-F0C4-96DDCB0AAE3F">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:42:33 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5926418-8B93-3B2B-96FA-2F418B14B2D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_age" id="D65C9DF6-C461-1459-A231-D42BDFBD6B97">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:43:17 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DF00A235-2059-245F-4A08-20D5AFA486ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B5C3027-275C-C28B-B348-671CBF325D67" name="Customer_Booking PK">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:41:32 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6DDBD3F4-3923-20A2-DAFF-5D6F1449C4EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05D2553C-64F1-3048-5F80-6635046B3D14" name="table">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:59:39 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="table_ID" id="01AA97AD-5C6E-61EA-3B50-08D8127806FF">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:59:54 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>71C68905-8D43-835B-B531-212A8FC82FC4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="table_type" id="79028BE1-72C5-AF85-CD0E-2DE049E95DAA">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 19:00:05 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DF00A235-2059-245F-4A08-20D5AFA486ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="table_location" id="D07FC77E-F6DF-B8E6-1A38-DF69985E111B">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 19:00:30 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5926418-8B93-3B2B-96FA-2F418B14B2D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A631E6C8-7CF1-2441-EC74-985071F2ECAB" name="table PK">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 19:00:24 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>01AA97AD-5C6E-61EA-3B50-08D8127806FF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

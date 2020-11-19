@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E0E4EF3-B730-4527-46ED-8365B94D43FC" name="BurgerShack">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:38:07 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="burgerS_ID" id="440651FD-69D0-5B5B-1000-1821468DDC65">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:38:26 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>71C68905-8D43-835B-B531-212A8FC82FC4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="burgerS_address" id="7420715C-1D10-157E-6729-2C0A225A9AA4">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:38:42 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E5926418-8B93-3B2B-96FA-2F418B14B2D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="burgerS_phone" id="A601DFF9-E386-B6F8-FD06-6C2A613D1DA1">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:39:01 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DF00A235-2059-245F-4A08-20D5AFA486ED</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72AC642F-9532-2F03-43C8-2018450D76CF" name="BurgerShack PK">
+<createdBy>Jade Higgins</createdBy>
+<createdTime>2020-11-19 18:38:39 UTC</createdTime>
+<ownerDesignName>caproject</ownerDesignName>
+<engineerTo>
+<item key="EDF6EDFE-36C8-EE55-E3FE-5E73E39D5FC8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>440651FD-69D0-5B5B-1000-1821468DDC65</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
