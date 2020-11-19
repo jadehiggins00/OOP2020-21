@@ -1,0 +1,89 @@
+/*
+Lab2 
+Jade higgins
+c19365731
+
+
+*/
+
+
+DROP TABLE animal CASCADE CONSTRAINTS PURGE;
+DROP TABLE customer CASCADE CONSTRAINTS PURGE;
+DROP TABLE AnimalSale CASCADE CONSTRAINTS PURGE;
+DROP TABLE speciesTab CASCADE CONSTRAINTS PURGE;
+
+CREATE TABLE animal(
+    animalID NUMBER(8),
+    animalName VARCHAR2(50),
+CONSTRAINT animal_PK PRIMARY KEY (animalID)
+);
+
+CREATE TABLE customer(
+    custID NUMBER(3),
+    custName VARCHAR2(50),
+    custEmail VARCHAR2(50),
+CONSTRAINT customer_PK PRIMARY KEY (custID)
+);
+
+
+
+CREATE TABLE AnimalSale(
+    animalID NUMBER(6),   
+    custID NUMBER(6),   
+    CONSTRAINT animal_customer_PK PRIMARY KEY (animalID,custID),
+    CONSTRAINT AnimalSale_animal_fk  FOREIGN KEY (animalID)  REFERENCES animal (animalID),   
+    CONSTRAINT AnimalSale_customer_fk  FOREIGN KEY (custID)  REFERENCES customer (custID)
+   
+);
+-- Part 4
+CREATE TABLE speciesTab(
+    speciesCode NUMBER(6),
+    speciesName VARCHAR2(30),
+    speciesPrice NUMBER(11,2), 
+    PRIMARY KEY (speciesCode)
+);
+
+--altering the animal table
+ALTER TABLE animal DROP COLUMN animalName;
+
+ALTER TABLE animal ADD speciesCode NUMBER(4); 
+
+ALTER TABLE animal ADD CONSTRAINT animal_speciestAB_fk  FOREIGN KEY (speciesCode) REFERENCES speciesTab (speciesCode);
+/*Insert statement for animal table */
+INSERT INTO animal(animalID, animalName) VALUES (1,'Tiny');
+INSERT INTO animal(animalID, animalName) VALUES (2,'Prince');
+INSERT INTO animal(animalID, animalName) VALUES (3,'CJ');
+INSERT INTO animal(animalID, animalName) VALUES (4,'Sid');
+INSERT INTO animal(animalID, animalName) VALUES (5,'Sid');
+INSERT INTO animal(animalID, animalName) VALUES (6,'Danger');
+INSERT INTO animal(animalID, animalName) VALUES (7,'Bonnie');
+
+INSERT INTO customer (custID, custName, custEmail) VALUES (1,'D.Smith','dsmith@yahoo.co.uk');
+INSERT INTO customer (custID, custName, custEmail) VALUES (2,'B.Byrne','bb@gmail.com');
+INSERT INTO customer (custID, custName, custEmail) VALUES (3,'X.Dobbs','xb@gmail.com');
+
+
+INSERT INTO AnimalSale (animalID, custID) VALUES (1,1);
+INSERT INTO AnimalSale (animalID, custID) VALUES (2,2);
+INSERT INTO AnimalSale (animalID, custID) VALUES (3,2);
+INSERT INTO AnimalSale (animalID, custID) VALUES (4,3);
+INSERT INTO AnimalSale (animalID, custID) VALUES (5,2);
+COMMIT;
+
+--Find the names of all animals
+SELECT animalName FROM animal WHERE animalID <8;
+
+--Find the names of all animals with an ID less than 4
+SELECT animalName FROM animal WHERE animalID >=4;
+
+--Find the names of customers that contain an uppercase letter D
+SELECT custName FROM customer WHERE custName LIKE 'D%';
+
+--Find the names of all customers that start with an uppercase letter B
+SELECT custName FROM customer WHERE custName LIKE 'B%';
+
+-- PART 4
+INSERT INTO speciesTab (speciesCode, speciesName, speciesPrice) VALUES (1, 'Dog', 9.99);
+INSERT INTO speciesTab (speciesCode, speciesName, speciesPrice) VALUES (2, 'Cat', 10.20);
+INSERT INTO speciesTab (speciesCode, speciesName, speciesPrice) VALUES (3, 'Snake', 20.00);
+INSERT INTO speciesTab (speciesCode, speciesName, speciesPrice) VALUES (4, 'Mouse', 5.00);
